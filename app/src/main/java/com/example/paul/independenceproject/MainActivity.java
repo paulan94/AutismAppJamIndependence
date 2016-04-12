@@ -26,7 +26,7 @@ public class MainActivity extends FragmentActivity {
         final Animation screenFadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in_start);
 
         //screenAnimation fade in
-        main_screen.startAnimation(screenFadeIn);
+//        main_screen.startAnimation(screenFadeIn);
 
         // Check that the activity is using the layout version with
         // the fragment_container FrameLayout
