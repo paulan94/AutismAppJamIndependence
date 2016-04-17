@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.paul.independenceproject.EmpathyGameFragment">
+
+    <RelativeLayout
+        android:id="@+id/popup_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/popup_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empathy_game_instructions"
+            android:gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/popup_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empathy_game_instructions2"
+            android:layout_below="@id/popup_text1"
+            android:layout_margin="30dp"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/gotit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/got_it_popup"
+            android:background="@drawable/rounded_button"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/Gray"
+            fbutton:shadowColor="@color/DarkGray"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Black">
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -4,5 +4,14 @@
     <!--title fragment-->
     <string name="title_text">Welcome to the Independence Project</string>
     <string name="get_started_button_text">Get Started</string>
+    <string name="choose_options_title">Hello (Name)!</string>
+    <string name="journal_button_text">Journal</string>
+    <string name="empathy_button_text">Empathy Game</string>
+    <string name="madlib_button_text">Default String</string>
 
+    <!--Empathy Game Texts-->
+    <string name="empathy_game_instructions">Instructions</string>
+    <string name="empathy_game_instructions2">More instructions</string>
+    <string name="got_it_popup">Got It</string>
 </resources>
+
