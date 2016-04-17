@@ -47,8 +47,7 @@ public class MainActivity extends FragmentActivity {
             mainFragment.setArguments(getIntent().getExtras());
 
             // Add the fragment to the 'fragment_container' FrameLayout
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.fragment_container, mainFragment).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, mainFragment).commit();
         }
     }
 }

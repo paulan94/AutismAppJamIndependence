@@ -37,10 +37,11 @@ public class MainFragment extends Fragment {
         ImageView iv = (ImageView)v.findViewById(R.id.logo_imageview);
 
 
-        Typeface custom_font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/scriptina.ttf");
-        Typeface amatic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/AmaticSC-Regular.ttf");
 
-        tx.setTypeface(custom_font);
+        Typeface amatic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/AmaticSC-Regular.ttf");
+        Typeface league_gothic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/league-gothic.regular.ttf");
+
+        tx.setTypeface(league_gothic);
         button1.setTypeface(amatic);
 
         //animations

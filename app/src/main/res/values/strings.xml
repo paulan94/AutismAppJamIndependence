@@ -5,6 +5,4 @@
     <string name="title_text">Welcome to the Independence Project</string>
     <string name="get_started_button_text">Get Started</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
