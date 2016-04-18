@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.paul.independenceproject.BreathingFragment">
+
+    <RelativeLayout
+        android:id="@+id/breathing_activity_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--change visiblity-->
+
+        <TextView
+            android:id="@+id/breathing_popup_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/breathing_popup_text1"
+            android:gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/breathing_popup_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/breathing_popup_text2"
+            android:layout_below="@id/breathing_popup_text1"
+            android:layout_margin="30dp"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/breathing_gotit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/got_it_popup"
+            android:background="@drawable/rounded_button"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/Gray"
+            fbutton:shadowColor="@color/DarkGray"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/breathing_activity_real"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color_bg"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/gif_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/breathing_gif"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/inhale_breathing_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inhale_text"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/exhale_breathing_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exhale_text"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

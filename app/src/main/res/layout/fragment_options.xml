@@ -24,11 +24,11 @@
             android:layout_gravity="center">
 
             <info.hoang8f.widget.FButton
-                android:id="@+id/journal_button"
+                android:id="@+id/breathing_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
-                android:text="@string/journal_button_text"
+                android:text="@string/breathing_button_text"
                 android:textSize="20sp"
                 android:textColor="@color/white"
                 fbutton:buttonColor="@color/FireBrick"
@@ -55,9 +55,10 @@
                 fbutton:cornerRadius="5dp"
                 android:paddingRight="15dp"
                 android:paddingLeft="15dp"
-                android:layout_below="@+id/journal_button"
+                android:layout_below="@+id/breathing_button"
                 android:layout_marginBottom="40dp"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
 
             <info.hoang8f.widget.FButton
                 android:id="@+id/empathy_button"

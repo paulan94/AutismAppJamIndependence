@@ -5,9 +5,15 @@
     <string name="title_text">Welcome to the Independence Project</string>
     <string name="get_started_button_text">Get Started</string>
     <string name="choose_options_title">Hello (Name)!</string>
-    <string name="journal_button_text">Journal</string>
+    <string name="breathing_button_text">Breathing Exercise</string>
     <string name="empathy_button_text">Empathy Game</string>
     <string name="madlib_button_text">Default String</string>
+
+    <!--Breathing Texts-->
+    <string name="inhale_text">Inhale</string>
+    <string name="exhale_text">Exhale</string>
+    <string name="breathing_popup_text1">The following animation was designed to help you relax.</string>
+    <string name="breathing_popup_text2">Inhale and Exhale at your convenience.</string>
 
     <!--Empathy Game Texts-->
     <string name="empathy_game_instructions">Instructions</string>
@@ -22,8 +28,6 @@
     <string name="sad_face_text">Sad</string>
 
     <string name="game_question">Pick out an emotion</string>
-    <string-array name="questionlist">
-        <item>fuklol</item>
-    </string-array>
+
 </resources>
 

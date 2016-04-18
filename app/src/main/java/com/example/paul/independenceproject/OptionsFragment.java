@@ -46,24 +46,24 @@ public class OptionsFragment extends Fragment {
         tx.setTypeface(windsong);
 
 
-        Button journalButton = (Button)v.findViewById(R.id.journal_button);
+        Button breathingButton = (Button)v.findViewById(R.id.breathing_button);
         Button defaultButton = (Button)v.findViewById(R.id.default_button);
         Button empathyButton = (Button)v.findViewById(R.id.empathy_button);
 
-        //journal button stuff
-//        journalButton.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//
-//                //meditation fragment
-//                CameraFragment cameraFragment = new CameraFragment();
-//                final FragmentTransaction ft = getFragmentManager().beginTransaction();
-//                ft.replace(R.id.fragment_container, cameraFragment);
-//                ft.addToBackStack(null);
-//                ft.commit();
-//
-//            }
-//        });
+        //breathing button stuff
+        breathingButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+                //meditation fragment
+                BreathingFragment breathingFragment = new BreathingFragment();
+                final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.fragment_container, breathingFragment);
+                ft.addToBackStack(null);
+                ft.commit();
+
+            }
+        });
 
         //open up default screen
 //        defaultButton.setOnClickListener(new View.OnClickListener(){
@@ -99,7 +99,7 @@ public class OptionsFragment extends Fragment {
         Typeface amatic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/AmaticSC-Regular.ttf");
 
 
-        journalButton.setTypeface(amatic);
+        breathingButton.setTypeface(amatic);
         defaultButton.setTypeface(amatic);
         empathyButton.setTypeface(amatic);
 
