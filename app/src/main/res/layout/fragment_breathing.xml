@@ -50,6 +50,13 @@
             android:layout_marginBottom="20dp"/>
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/timer_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/timer_count"
+        android:visibility="invisible"/>
 
     <RelativeLayout
         android:id="@+id/breathing_activity_real"
@@ -62,7 +69,7 @@
             android:id="@+id/gif_iv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/breathing_gif"
+            android:src="@drawable/breathing_gif2"
             android:layout_gravity="center_horizontal"/>
         <TextView
             android:id="@+id/inhale_breathing_tv"
@@ -75,18 +82,6 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"/>
-
-        <TextView
-            android:id="@+id/exhale_breathing_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/exhale_text"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="50dp"/>
 
     </RelativeLayout>
 

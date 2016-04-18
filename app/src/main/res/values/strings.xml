@@ -14,6 +14,7 @@
     <string name="exhale_text">Exhale</string>
     <string name="breathing_popup_text1">The following animation was designed to help you relax.</string>
     <string name="breathing_popup_text2">Inhale and Exhale at your convenience.</string>
+    <string name="timer_count">0</string>
 
     <!--Empathy Game Texts-->
     <string name="empathy_game_instructions">Instructions</string>
