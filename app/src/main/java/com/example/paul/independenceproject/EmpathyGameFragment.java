@@ -17,7 +17,7 @@ public class EmpathyGameFragment extends Fragment {
 
 
     RelativeLayout popup_text_view;
-    FrameLayout game_view;
+    RelativeLayout game_view;
 
     public EmpathyGameFragment() {
         // Required empty public constructor
@@ -30,12 +30,14 @@ public class EmpathyGameFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_empathy_game, container, false);
         popup_text_view = (RelativeLayout)v.findViewById(R.id.popup_text_view);
+        game_view = (RelativeLayout)v.findViewById(R.id.game_relativelayout);
         Button gotitButton = (Button)v.findViewById(R.id.gotit_button);
 
         gotitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 popup_text_view.setVisibility(View.GONE);
+                game_view.setVisibility(View.VISIBLE);
             }
         });
         return v;

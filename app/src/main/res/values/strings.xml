@@ -13,5 +13,17 @@
     <string name="empathy_game_instructions">Instructions</string>
     <string name="empathy_game_instructions2">More instructions</string>
     <string name="got_it_popup">Got It</string>
+
+    <!--emotions-->
+    <string name="happy_face_text">Happy</string>
+    <string name="scared_face_text">Scared</string>
+    <string name="angry_face_text">Angry</string>
+    <string name="nervous_face_text">Nervous</string>
+    <string name="sad_face_text">Sad</string>
+
+    <string name="game_question">Pick out an emotion</string>
+    <string-array name="questionlist">
+        <item>fuklol</item>
+    </string-array>
 </resources>
 
