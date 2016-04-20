@@ -1,6 +1,7 @@
 package com.example.paul.independenceproject;
 
 
+import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
@@ -73,14 +74,20 @@ public class BreathingFragment extends Fragment {
 
         final Runnable updateTextRunnable=new Runnable(){
             public void run() {
-                if (breathingTextView.getText() == getString(R.string.exhale_text)) {
-                    breathingTextView.setText(R.string.inhale_text);
-                    handler.postDelayed(this, TEXT_CHANGE_TIME);
+//                check activity
+                Activity activity = getActivity();
+                if(activity != null){
+                    
+                    if (breathingTextView.getText() == getString(R.string.exhale_text)) {
+                        breathingTextView.setText(R.string.inhale_text);
+                        handler.postDelayed(this, TEXT_CHANGE_TIME);
 
-                }
-                else if (breathingTextView.getText() == getString(R.string.inhale_text)) {
-                    breathingTextView.setText(R.string.exhale_text);
-                    handler.postDelayed(this, TEXT_CHANGE_TIME);
+                    }
+                    else if (breathingTextView.getText() == getString(R.string.inhale_text)) {
+                        breathingTextView.setText(R.string.exhale_text);
+                        handler.postDelayed(this, TEXT_CHANGE_TIME);
+                    }
+                    else return;
                 }
 
             }

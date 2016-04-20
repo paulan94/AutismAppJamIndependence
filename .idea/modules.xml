@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/IndependenceProject.iml" filepath="$PROJECT_DIR$/IndependenceProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutismAppJamIndependence.iml" filepath="$PROJECT_DIR$/AutismAppJamIndependence.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
