@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/color_bg"
     tools:context="com.example.paul.independenceproject.BreathingFragment">
 
     <RelativeLayout
@@ -48,34 +49,46 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp"/>
+
+
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/timer_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/timer_count"
-        android:visibility="invisible"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/timer_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="fasdasdasdasdasdasd"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/breathing_activity_real"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/color_bg"
-        android:visibility="invisible">
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/gif_iv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/breathing_gif2"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
         <TextView
-            android:id="@+id/inhale_breathing_tv"
+            android:id="@+id/exhale_breathing_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/inhale_text"
+            android:text="@string/exhale_text"
             android:textSize="40sp"
             android:textStyle="bold"
             android:textColor="@color/white"

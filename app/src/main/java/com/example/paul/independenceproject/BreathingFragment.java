@@ -31,10 +31,12 @@ public class BreathingFragment extends Fragment {
     TextView breathingTextView;
     RelativeLayout breathing_activity_layout;
     protected static final long TIME_DELAY = 1000;
+
+    protected static final long TEXT_CHANGE_TIME = 4485;
     //the default update interval for your text, this is in your hand , just run this sample
     TextView mTextView;
     Handler handler=new Handler();
-    int count =0;
+    int count =5;
 
     public BreathingFragment() {
         // Required empty public constructor
@@ -54,7 +56,7 @@ public class BreathingFragment extends Fragment {
         Typeface league_gothic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/league-gothic.regular.ttf");
 
         final ImageView imageView = (ImageView)v.findViewById(R.id.gif_iv);
-        final TextView breathingTextView = (TextView)v.findViewById(R.id.inhale_breathing_tv);
+        final TextView breathingTextView = (TextView)v.findViewById(R.id.exhale_breathing_tv);
 
         Button breathingButton = (Button)v.findViewById(R.id.breathing_gotit_button);
 
@@ -71,29 +73,45 @@ public class BreathingFragment extends Fragment {
 
         final Runnable updateTextRunnable=new Runnable(){
             public void run() {
-                count++;
-                mTextView.setText("Exercise Starting in " + count + " seconds.");
-                handler.postDelayed(this, TIME_DELAY);
-                if (count == 3){
-                    popupRelativelayout.setVisibility(View.GONE);
-                    breathingRelativelayout.setVisibility(View.VISIBLE);
-                    mTextView.setVisibility(View.GONE);
+                if (breathingTextView.getText() == getString(R.string.exhale_text)) {
+                    breathingTextView.setText(R.string.inhale_text);
+                    handler.postDelayed(this, TEXT_CHANGE_TIME);
+
                 }
+                else if (breathingTextView.getText() == getString(R.string.inhale_text)) {
+                    breathingTextView.setText(R.string.exhale_text);
+                    handler.postDelayed(this, TEXT_CHANGE_TIME);
+                }
+
             }
         };
 
+        final Runnable timerUpdateRunnable=new Runnable(){
+            public void run() {
+                count--;
+                mTextView.setText("Get ready to inhale in " + count + " seconds.");
+                handler.postDelayed(this, TIME_DELAY);
+                if (count == -1){
+
+                    breathingRelativelayout.setVisibility(View.VISIBLE);
+                    mTextView.setVisibility(View.GONE);
+                    handler.post(updateTextRunnable);
+                }
+
+            }
+        };
 
         breathingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mTextView.setVisibility(View.VISIBLE);
-
-                handler.post(updateTextRunnable);
+                popupRelativelayout.setVisibility(View.GONE);
+                handler.post(timerUpdateRunnable);
             }
         });
+
 //        popup with 3 second timer to start breathing exercise.
-//        popupRelativelayout.setVisibility(View.GONE);
-//        breathingRelativelayout.setVisibility(View.VISIBLE);
+
 
         return v;
     }
