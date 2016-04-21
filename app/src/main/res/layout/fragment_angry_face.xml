@@ -2,12 +2,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/angry_quote_page"
+    android:background="@drawable/color_bg"
     tools:context="com.example.paul.independenceproject.AngryFaceFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/angry_quote_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"/>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/generate_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fbutton:buttonColor="@color/Gray"
+        fbutton:shadowColor="@color/DarkGray"
+        android:text="@string/get_quote_button"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="5dp"
+        fbutton:cornerRadius="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"/>
 
 </FrameLayout>

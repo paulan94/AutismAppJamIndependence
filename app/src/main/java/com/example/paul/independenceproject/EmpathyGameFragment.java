@@ -1,16 +1,12 @@
 package com.example.paul.independenceproject;
 
-import android.hardware.Camera;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -55,6 +51,50 @@ public class EmpathyGameFragment extends Fragment {
                 HappyFaceFragment happyFaceFragment = new HappyFaceFragment();
                 final FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.fragment_container, happyFaceFragment);
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+        });
+
+        sadfaceImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SadFaceFragment sadFaceFragment = new SadFaceFragment();
+                final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.fragment_container, sadFaceFragment);
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+        });
+
+        scaredfaceImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ScaredFaceFragment scaredFaceFragment = new ScaredFaceFragment();
+                final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.fragment_container, scaredFaceFragment);
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+        });
+
+        angryfaceImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AngryFaceFragment angryFaceFragment = new AngryFaceFragment();
+                final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.fragment_container, angryFaceFragment);
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+        });
+
+        nervousfaceImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NervousFaceFragment nervousFaceFragment = new NervousFaceFragment();
+                final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.fragment_container, nervousFaceFragment);
                 ft.addToBackStack(null);
                 ft.commit();
             }

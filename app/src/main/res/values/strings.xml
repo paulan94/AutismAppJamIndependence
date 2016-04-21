@@ -5,8 +5,10 @@
     <string name="title_text">Welcome to the Independence Project</string>
     <string name="get_started_button_text">Get Started</string>
     <string name="choose_options_title">Hello (Name)!</string>
+    <!--change greeting based on time of day-->
+
     <string name="breathing_button_text">Breathing Exercise</string>
-    <string name="empathy_button_text">Empathy Game</string>
+    <string name="quotes_button_text">Handling emotions</string>
     <string name="madlib_button_text">Default String</string>
 
     <!--Breathing Texts-->
@@ -17,8 +19,8 @@
     <string name="timer_count">0</string>
 
     <!--Empathy Game Texts-->
-    <string name="empathy_game_instructions">Instructions</string>
-    <string name="empathy_game_instructions2">More instructions</string>
+    <string name="quotes_page_instructions">Pick out an emotion</string>
+    <string name="quotes_page_instructions2">We will provide you with tips and quotes to help you through your day. You are never alone.</string>
     <string name="got_it_popup">Got It</string>
 
     <!--emotions-->
@@ -29,6 +31,42 @@
     <string name="sad_face_text">Sad</string>
 
     <string name="game_question">Pick out an emotion</string>
+    <string name="get_quote_button">Generate Quote</string>
+
+    <!--happy quote list-->
+    <string-array name="happy_quote_list">
+        <item>The scariest thing is setting your goals too low and meeting them.
+        -Georges Saint Pierre</item>
+        <item>fgdfgdfgdfg</item>
+        <item>Tjhjhjhjhjhjhjhjhjle</item>
+    </string-array>
+
+
+    <!--scared quote list-->
+    <string-array name="scared_quote_list">
+        <item>The scariest thing is setting your goals too low and meeting them.
+        -Georges Saint Pierre</item>
+    </string-array>
+
+
+    <!--angry quote list-->
+    <string-array name="angry_quote_list">
+        <item>The scariest thing is setting your goals too low and meeting them.
+        -Georges Saint Pierre</item>
+    </string-array>
+
+
+    <!--nervous quote list-->
+    <string-array name="nervous_quote_list">
+        <item>The scariest thing is setting your goals too low and meeting them.
+        -Georges Saint Pierre</item>
+    </string-array>
+
+    <!--sad quote list-->
+    <string-array name="sad_quote_list">
+        <item>sad</item>
+        <item>sad2</item>
+    </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
