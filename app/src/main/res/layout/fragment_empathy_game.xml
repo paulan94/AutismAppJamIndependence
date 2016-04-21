@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:fbutton="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.paul.independenceproject.EmpathyGameFragment">
+    tools:context="com.example.paul.independenceproject.EmpathyGameFragment"
+    android:background="@drawable/color_bg">
 
     <RelativeLayout
         android:id="@+id/popup_text_view"

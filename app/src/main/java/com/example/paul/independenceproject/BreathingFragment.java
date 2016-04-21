@@ -77,7 +77,7 @@ public class BreathingFragment extends Fragment {
 //                check activity
                 Activity activity = getActivity();
                 if(activity != null){
-                    
+
                     if (breathingTextView.getText() == getString(R.string.exhale_text)) {
                         breathingTextView.setText(R.string.inhale_text);
                         handler.postDelayed(this, TEXT_CHANGE_TIME);
