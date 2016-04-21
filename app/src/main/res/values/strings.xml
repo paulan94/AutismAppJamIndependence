@@ -4,7 +4,7 @@
     <!--title fragment-->
     <string name="title_text">Welcome to the Independence Project</string>
     <string name="get_started_button_text">Get Started</string>
-    <string name="choose_options_title">Hello (Name)!</string>
+    <string name="choose_options_title">Greetings!</string>
     <!--change greeting based on time of day-->
 
     <string name="breathing_button_text">Breathing Exercise</string>
@@ -64,12 +64,71 @@
 
     <!--sad quote list-->
     <string-array name="sad_quote_list">
-        <item>sad</item>
-        <item>sad2</item>
+        <item>The purpose of life is to be defeated by greater and greater things.</item>
+
+        <item>"Don't cry because it\'s over, smile because it happened."
+        ― Dr. Seuss</item>
+
+        <item>"You cannot protect yourself from sadness without protecting yourself from happiness."
+        ― Jonathan Safran Foer</item>
+
+        <item>"Tears shed for another person are not a sign of weakness. They are a sign of a pure heart."
+        ― José N. Harris, MI VIDA: A Story of Faith, Hope and Love</item>
+
+        <item>"Be strong, because things will get better. It may> be stormy now, but it never rains forever. </item>
+
+        <item>"Nothing can cure the soul but the senses, just as nothing can cure the senses but the soul."
+        ― Oscar Wilde, The Picture of Dorian Gray</item>
+
+        <item>Curiosity will conquer fear even more than bravery will.
+            -James Stephens</item>
+
+        <item>"Sad? Depressed? Heartbroken? Feeling like world\'s going to end tomorrow?
+        No worries, there’s a Taylor Swift song for that"</item>
+
+        <item>"Whenever you feel sad, just remember that there\'s someone in the world who is pulling a door that says push."</item>
+
+        <item>"Take a step and breathe. It\'s a bad day, not a bad life."</item>
+
+        <item>"Ice cream does wonders for a heavy heart. Frozen yogurt is probably healthier though." </item>
+
+        <item>Here\'s a joke:
+        They all laughed when I said I wanted to be a comedian. Well, they\'re not laughing now</item>
+
+        <item>Everytime I\'m sad, I imagine a T-Rex trying to put a hat on. </item>
+
+        <item>"Exercise is good for your body and mind.
+        Nudge nudge, wink wink."</item>
+
+        <item>May the Force be with you.
+        And the Happiness.
+        And the Love.</item>
+
+        <item>Every human walks around with a certain kind of sadness. They may not wear it on their sleeves, but it\'s there if you look deep.
+        -Taraji P. Henson</item>
+
+        <item>Fear is only as deep as the mind allows.
+        -Japanese Proverb</item>
+
+
+        <item>Take baby steps, Rome wasn\'t built in a day.</item>
+
+        <item>Make sure you get enough sleep. If you can\'t, coffee helps too.</item>
+
+        <item>Pain is inevitable, but suffering is optional.</item>
+
+        <item> Healing doesn\'t mean you were never hurt, it means you no longer allow the hurt to control you. </item>
+
+        <item> When everything goes wrong and things seem to fall apart?
+        When nobody believes in you and you feel so alone?
+        This is the EXACT moment that you got to believe in yourself. </item>
+
+        <item>If you can\'t fly, then run, if you can\'t run, then walk, if you can\'’t walk, then crawl, but whatever you do, you have to keep moving forward.</item>
+
+        <item>The ones who are crazy enough to think they can change the world are the ones that do.</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>
 
