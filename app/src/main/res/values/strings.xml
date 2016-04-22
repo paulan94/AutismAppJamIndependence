@@ -35,10 +35,18 @@
 
     <!--happy quote list-->
     <string-array name="happy_quote_list">
-        <item>The scariest thing is setting your goals too low and meeting them.
-        -Georges Saint Pierre</item>
-        <item>fgdfgdfgdfg</item>
-        <item>Tjhjhjhjhjhjhjhjhjle</item>
+        <item>The secret to happiness is freedom. And the secret to freedom is courage</item>
+        <item>Action may not always Bring happiness, But there is no happiness without action.</item>
+        <item>Every man is happy until happiness is suddenly a goal.</item>
+        <item>We don\'t develop courage By Being happy every day. We develop it By surviving difficult times and challenging adversity.</item>
+        <item>The most important thing is to enjoy your life - to Be happy - it\'s all that matters.</item>
+        <item>Being happy never goes out of style.</item>
+        <item>Sometimes your joy is the source of your smile, But sometimes your smile can Be the source of your joy.</item>
+        <item>Happy people plan actions, they don\’t plan results.</item>
+        <item>Very little is needed to make a happy life; it is all within yourself, in your way of thinking.</item>
+        <item>The foolish man seeks happiness in the distance, the wise grows it under his feet.</item>
+        <item>No act of kindness, no matter how small, is ever wasted.</item>
+        <item>No one can make you feel inferior without your consent.</item>
     </string-array>
 
 
@@ -46,85 +54,89 @@
     <string-array name="scared_quote_list">
         <item>The scariest thing is setting your goals too low and meeting them.
         -Georges Saint Pierre</item>
+        <item>Many a false step was made By standing still.</item>
+        <item>Feel fear and do it anyway.</item>
+        <item>Courage is Being scared to death... and saddling up anyway.</item>
+        <item>Only those who will risk going too far can possiBly find out how far one can go.</item>
+        <item>Don\'t fear failure so much that you refuse to try new things. The saddest summary of a life contains three descriptions: could have, might have, and should have.</item>
     </string-array>
 
 
     <!--angry quote list-->
     <string-array name="angry_quote_list">
-        <item>The scariest thing is setting your goals too low and meeting them.
-        -Georges Saint Pierre</item>
+        <item>For every minute you remain angry, you give up sixty seconds of peace of mind.
+        -Ralph Waldo Emerson</item>
+        <item>When angry count to ten Before you speak. If very angry, count to one hundred.
+            -Thomas Jefferson</item>
+        <item>I am a danger to myself if I get angry.
+            -Oriana Fallaci</item>
+        <item>When anger rises, think of the consequences.
+        -Confucius</item>
+        <item>It\’s okay to Be angry, it\’s never okay to Be cruel.</item>
+        <item>When angry count to ten Before you speak. If very angry, count to one hundred.</item>
+        <item>The strongest people are not those who show strength in front of us, But those who win Battles we know nothing aBout.</item>
+        <item>Everytime you are aBle to find some humor in a difficult situation, you win.</item>
     </string-array>
 
 
     <!--nervous quote list-->
     <string-array name="nervous_quote_list">
-        <item>The scariest thing is setting your goals too low and meeting them.
-        -Georges Saint Pierre</item>
+        <item>Nothing fails like success</item>
+        <item>If you can dream it, you can do it.
+        -Walt Disney</item>
+        <item>Being nervous isn\'t Bad, it just means something important is happening.
+        -Anonymous</item>
+        <item>If you don\'t try, there’s no opportunity to succeed.
+        -Katie Lime</item>
+        <item>Life Begins at the end of your comfort zone.
+        -Anonymous</item>
+        <item>Don\'t let your mind Bully your Body into Believing it must carry the Burden of its worries.
+        -Astrid Alauda</item>
+        <item>Every time you are tempted to react in the same old way, ask if you want to Be a prisoner of the past or a pioneer of the future.
+        -Deepak Chopra</item>
+        <item>Smile, Breathe, and go slowly.
+        -Thich Nhat Hanh</item>
+
     </string-array>
 
     <!--sad quote list-->
     <string-array name="sad_quote_list">
-        <item>The purpose of life is to be defeated by greater and greater things.</item>
-
-        <item>"Don't cry because it\'s over, smile because it happened."
+        <item>The purpose of life is to Be defeated By greater and greater things.</item>
+        <item>"Don't cry Because it\'s over, smile Because it happened."
         ― Dr. Seuss</item>
-
         <item>"You cannot protect yourself from sadness without protecting yourself from happiness."
         ― Jonathan Safran Foer</item>
-
         <item>"Tears shed for another person are not a sign of weakness. They are a sign of a pure heart."
         ― José N. Harris, MI VIDA: A Story of Faith, Hope and Love</item>
-
-        <item>"Be strong, because things will get better. It may> be stormy now, but it never rains forever. </item>
-
-        <item>"Nothing can cure the soul but the senses, just as nothing can cure the senses but the soul."
+        <item>"Be strong, Because things will get Better. It may Be stormy now, But it never rains forever. </item>
+        <item>"Nothing can cure the soul But the senses, just as nothing can cure the senses But the soul."
         ― Oscar Wilde, The Picture of Dorian Gray</item>
-
-        <item>Curiosity will conquer fear even more than bravery will.
-            -James Stephens</item>
-
-        <item>"Sad? Depressed? Heartbroken? Feeling like world\'s going to end tomorrow?
+        <item>Curiosity will conquer fear even more than Bravery will.
+           -James Stephens</item>
+        <item>"Sad? Depressed? HeartBroken? Feeling like world\'s going to end tomorrow?
         No worries, there’s a Taylor Swift song for that"</item>
-
-        <item>"Whenever you feel sad, just remember that there\'s someone in the world who is pulling a door that says push."</item>
-
-        <item>"Take a step and breathe. It\'s a bad day, not a bad life."</item>
-
-        <item>"Ice cream does wonders for a heavy heart. Frozen yogurt is probably healthier though." </item>
-
+        <item>"Whenever you feel sad, just rememBer that there\'s someone in the world who is pulling a door that says push."</item>
+        <item>"Take a step and Breathe. It\'s a Bad day, not a Bad life."</item>
+        <item>"Ice cream does wonders for a heavy heart. Frozen yogurt is proBaBly healthier though." </item>
         <item>Here\'s a joke:
-        They all laughed when I said I wanted to be a comedian. Well, they\'re not laughing now</item>
-
+        They all laughed when I said I wanted to Be a comedian. Well, they\'re not laughing now</item>
         <item>Everytime I\'m sad, I imagine a T-Rex trying to put a hat on. </item>
-
-        <item>"Exercise is good for your body and mind.
-        Nudge nudge, wink wink."</item>
-
-        <item>May the Force be with you.
-        And the Happiness.
-        And the Love.</item>
-
-        <item>Every human walks around with a certain kind of sadness. They may not wear it on their sleeves, but it\'s there if you look deep.
+        <item>"Exercise is good for your Body and mind. Nudge nudge, wink wink."</item>
+        <item>May the Force Be with you.
+            And the Happiness.
+            And the Love.</item>
+        <item>Every human walks around with a certain kind of sadness. They may not wear it on their sleeves, But it\'s there if you look deep.
         -Taraji P. Henson</item>
-
         <item>Fear is only as deep as the mind allows.
-        -Japanese Proverb</item>
-
-
-        <item>Take baby steps, Rome wasn\'t built in a day.</item>
-
+        -Japanese ProverB</item>
+        <item>Take BaBy steps, Rome wasn\'t Built in a day.</item>
         <item>Make sure you get enough sleep. If you can\'t, coffee helps too.</item>
-
-        <item>Pain is inevitable, but suffering is optional.</item>
-
+        <item>Pain is inevitaBle, But suffering is optional.</item>
         <item> Healing doesn\'t mean you were never hurt, it means you no longer allow the hurt to control you. </item>
-
         <item> When everything goes wrong and things seem to fall apart?
-        When nobody believes in you and you feel so alone?
-        This is the EXACT moment that you got to believe in yourself. </item>
-
-        <item>If you can\'t fly, then run, if you can\'t run, then walk, if you can\'’t walk, then crawl, but whatever you do, you have to keep moving forward.</item>
-
+        When noBody Believes in you and you feel so alone?
+        This is the EXACT moment that you got to Believe in yourself. </item>
+        <item>If you can\'t fly, then run, if you can\'t run, then walk, if you can\'’t walk, then crawl, But whatever you do, you have to keep moving forward.</item>
         <item>The ones who are crazy enough to think they can change the world are the ones that do.</item>
     </string-array>
 

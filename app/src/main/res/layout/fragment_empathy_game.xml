@@ -6,56 +6,55 @@
     tools:context="com.example.paul.independenceproject.EmpathyGameFragment"
     android:background="@drawable/color_bg">
 
-    <RelativeLayout
-        android:id="@+id/popup_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <!--change visiblity-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/popup_text_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--&lt;!&ndash;change visiblity&ndash;&gt;-->
 
-        <TextView
-            android:id="@+id/popup_text1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/quotes_page_instructions"
-            android:gravity="center_horizontal"
-            android:layout_margin="30dp"
-            android:textSize="20sp"/>
+        <!--<TextView-->
+            <!--android:id="@+id/popup_text1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/quotes_page_instructions"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_margin="30dp"-->
+            <!--android:textSize="20sp"/>-->
 
-        <TextView
-            android:id="@+id/popup_text2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/quotes_page_instructions2"
-            android:layout_below="@id/popup_text1"
-            android:layout_margin="30dp"
-            android:gravity="center_horizontal"
-            android:textSize="20sp"/>
+        <!--<TextView-->
+            <!--android:id="@+id/popup_text2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/quotes_page_instructions2"-->
+            <!--android:layout_below="@id/popup_text1"-->
+            <!--android:layout_margin="30dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textSize="20sp"/>-->
 
-        <info.hoang8f.widget.FButton
-            android:id="@+id/gotit_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/got_it_popup"
-            android:background="@drawable/rounded_button"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            fbutton:buttonColor="@color/Gray"
-            fbutton:shadowColor="@color/DarkGray"
-            fbutton:shadowEnabled="true"
-            fbutton:shadowHeight="5dp"
-            fbutton:cornerRadius="5dp"
-            android:paddingRight="15dp"
-            android:paddingLeft="15dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"/>
-    </RelativeLayout>
+        <!--<info.hoang8f.widget.FButton-->
+            <!--android:id="@+id/gotit_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/got_it_popup"-->
+            <!--android:background="@drawable/rounded_button"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--fbutton:buttonColor="@color/Gray"-->
+            <!--fbutton:shadowColor="@color/DarkGray"-->
+            <!--fbutton:shadowEnabled="true"-->
+            <!--fbutton:shadowHeight="5dp"-->
+            <!--fbutton:cornerRadius="5dp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="20dp"/>-->
+    <!--</RelativeLayout>-->
 
     <RelativeLayout
         android:id="@+id/game_relativelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
         android:layout_gravity="right|center_vertical">
         <!--change visibility to gone-->
 
@@ -94,6 +93,7 @@
             android:layout_above="@+id/nervous_face_tv"
             android:layout_alignLeft="@+id/angry_face_iv"
             android:layout_alignStart="@+id/angry_face_iv" />
+
         <TextView
             android:id="@+id/sad_face_tv"
             android:layout_width="wrap_content"
@@ -128,6 +128,7 @@
             android:layout_alignTop="@+id/scared_face_iv"
             android:layout_toRightOf="@+id/happy_face_tv"
             android:layout_toEndOf="@+id/happy_face_tv" />
+
         <TextView
             android:id="@+id/angry_face_tv"
             android:layout_width="wrap_content"
@@ -145,6 +146,7 @@
             android:layout_below="@+id/happy_face_iv"
             android:layout_alignLeft="@+id/nervous_face_iv"
             android:layout_alignStart="@+id/nervous_face_iv" />
+
         <TextView
             android:id="@+id/scared_face_tv"
             android:layout_width="wrap_content"

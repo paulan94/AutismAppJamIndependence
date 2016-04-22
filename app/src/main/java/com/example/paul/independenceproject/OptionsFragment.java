@@ -14,16 +14,17 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class OptionsFragment extends Fragment {
 
+    RelativeLayout popup_text_view;
+    RelativeLayout options_screen;
     FrameLayout fragment_options_framelayout;
 
     public OptionsFragment() {
@@ -35,7 +36,13 @@ public class OptionsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_options, container, false);
+        popup_text_view = (RelativeLayout)v.findViewById(R.id.popup_text_view);
+        final Button gotitButton = (Button)v.findViewById(R.id.gotit_button);
+
+        options_screen = (RelativeLayout)v.findViewById(R.id.options_screen);
         fragment_options_framelayout = (FrameLayout)v.findViewById(R.id.fragment_options_framelayout);
+
+
 
         //animation
         final Animation screenFadeIn = AnimationUtils.loadAnimation(this.getActivity(), R.anim.fade_in);
@@ -65,33 +72,24 @@ public class OptionsFragment extends Fragment {
             }
         });
 
-        //open up default screen
-//        defaultButton.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//
-//                //meditation fragment
-//                QuotesMainFragment quotesMainFragment = new QuotesMainFragment();
-//                final FragmentTransaction ft = getFragmentManager().beginTransaction();
-//                ft.replace(R.id.fragment_container, quotesMainFragment);
-//                ft.addToBackStack(null);
-//                ft.commit();
-//
-//            }
-//        });
+
 
         //empathy game button stuff
         empathyButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
-                //meditation fragment
-                EmpathyGameFragment empathyGameFragment= new EmpathyGameFragment();
-                final FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.fragment_container, empathyGameFragment);
-                ft.addToBackStack(null);
-                ft.commit();
-
+                options_screen.setVisibility(View.GONE);
+                popup_text_view.setVisibility(View.VISIBLE);
+                gotitButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        EmpathyGameFragment empathyGameFragment= new EmpathyGameFragment();
+                        final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                        ft.replace(R.id.fragment_container, empathyGameFragment);
+                        ft.addToBackStack(null);
+                        ft.commit();
+                    }
+                });
             }
         });
 
