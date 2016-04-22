@@ -101,6 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/quotes_page_instructions"
+            android:textColor="@color/Black"
             android:gravity="center_horizontal"
             android:layout_margin="30dp"
             android:textSize="20sp"/>
@@ -110,6 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/quotes_page_instructions2"
+            android:textColor="@color/Black"
             android:layout_below="@id/popup_text1"
             android:layout_margin="30dp"
             android:gravity="center_horizontal"

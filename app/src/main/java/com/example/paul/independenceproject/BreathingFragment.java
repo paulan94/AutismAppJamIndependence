@@ -30,12 +30,13 @@ import java.util.TimerTask;
 public class BreathingFragment extends Fragment {
 
     TextView breathingTextView;
+    TextView mTextView;
     RelativeLayout breathing_activity_layout;
     protected static final long TIME_DELAY = 1000;
 
     protected static final long TEXT_CHANGE_TIME = 4485;
     //the default update interval for your text, this is in your hand , just run this sample
-    TextView mTextView;
+
     Handler handler=new Handler();
     int count =5;
 
@@ -58,6 +59,7 @@ public class BreathingFragment extends Fragment {
 
         final ImageView imageView = (ImageView)v.findViewById(R.id.gif_iv);
         final TextView breathingTextView = (TextView)v.findViewById(R.id.exhale_breathing_tv);
+        final TextView mTextView = (TextView)v.findViewById(R.id.timer_count);
 
         Button breathingButton = (Button)v.findViewById(R.id.breathing_gotit_button);
 
@@ -65,12 +67,12 @@ public class BreathingFragment extends Fragment {
         final RelativeLayout breathingRelativelayout = (RelativeLayout)v.findViewById(R.id.breathing_activity_real);
 
         breathingTextView.setTypeface(league_gothic);
+        mTextView.setTypeface(league_gothic);
 
         breathingTextView.setAnimation(shrink_size);
 
         Ion.with(imageView).load("android.resource://" + getActivity().getPackageName() + "/" + R.drawable.breathing_gif2);
 
-        final TextView mTextView = (TextView)v.findViewById(R.id.timer_count);
 
         final Runnable updateTextRunnable=new Runnable(){
             public void run() {

@@ -1,5 +1,6 @@
 package com.example.paul.independenceproject;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 
 public class EmpathyGameFragment extends Fragment {
@@ -27,10 +29,7 @@ public class EmpathyGameFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_empathy_game, container, false);
 
-
-
         game_view = (RelativeLayout)v.findViewById(R.id.game_relativelayout);
-//        Button gotitButton = (Button)v.findViewById(R.id.gotit_button);
 
         ImageView happyfaceImageView = (ImageView)v.findViewById(R.id.happy_face_iv);
         ImageView sadfaceImageView = (ImageView)v.findViewById(R.id.sad_face_iv);
@@ -38,13 +37,11 @@ public class EmpathyGameFragment extends Fragment {
         ImageView angryfaceImageView = (ImageView)v.findViewById(R.id.angry_face_iv);
         ImageView scaredfaceImageView = (ImageView)v.findViewById(R.id.scared_face_iv);
 
-//        gotitButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                popup_text_view.setVisibility(View.GONE);
-//                game_view.setVisibility(View.VISIBLE);
-//            }
-//        });
+        TextView questionTextView = (TextView)v.findViewById(R.id.question_textview);
+
+        Typeface league_gothic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/league-gothic.regular.ttf");
+
+        questionTextView.setTypeface(league_gothic);
 
         happyfaceImageView.setOnClickListener(new View.OnClickListener() {
             @Override

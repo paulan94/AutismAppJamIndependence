@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/breathing_popup_text1"
+            android:textColor="@color/Black"
             android:gravity="center_horizontal"
             android:layout_margin="30dp"
             android:textSize="20sp"/>
@@ -26,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/breathing_popup_text2"
+            android:textColor="@color/Black"
             android:layout_below="@id/breathing_popup_text1"
             android:layout_margin="30dp"
             android:gravity="center_horizontal"
@@ -62,9 +64,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:text="fasdasdasdasdasdasd"
+            android:textColor="@color/Black"
             android:visibility="invisible"
+            android:padding="30dp"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
     </RelativeLayout>
@@ -89,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/exhale_text"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_alignParentTop="true"

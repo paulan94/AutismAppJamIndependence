@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Independence Project</string>
+    <string name="app_name">Clarity</string>
 
     <!--title fragment-->
-    <string name="title_text">Welcome to the Independence Project</string>
+    <string name="title_text">Welcome to Clarity</string>
     <string name="get_started_button_text">Get Started</string>
     <string name="choose_options_title">Greetings!</string>
     <!--change greeting based on time of day-->
@@ -20,7 +20,7 @@
 
     <!--Empathy Game Texts-->
     <string name="quotes_page_instructions">Pick out an emotion</string>
-    <string name="quotes_page_instructions2">We will provide you with tips and quotes to help you through your day. You are never alone.</string>
+    <string name="quotes_page_instructions2">We will provide you with tips and quotes to help you through your day.</string>
     <string name="got_it_popup">Got It</string>
 
     <!--emotions-->

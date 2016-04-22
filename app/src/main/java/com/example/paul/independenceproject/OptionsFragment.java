@@ -43,7 +43,6 @@ public class OptionsFragment extends Fragment {
         fragment_options_framelayout = (FrameLayout)v.findViewById(R.id.fragment_options_framelayout);
 
 
-
         //animation
         final Animation screenFadeIn = AnimationUtils.loadAnimation(this.getActivity(), R.anim.fade_in);
         fragment_options_framelayout.startAnimation(screenFadeIn);
