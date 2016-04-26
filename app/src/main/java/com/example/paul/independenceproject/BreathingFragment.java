@@ -52,9 +52,7 @@ public class BreathingFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_breathing, container, false);
 
         final Animation shrink_size = AnimationUtils.loadAnimation(getActivity(), R.anim.shrink_scale);
-        final Animation increase_scale = AnimationUtils.loadAnimation(getActivity(), R.anim.increase_scale);
 
-        Typeface windsong = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Windsong.ttf");
         Typeface league_gothic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/league-gothic.regular.ttf");
 
         final ImageView imageView = (ImageView)v.findViewById(R.id.gif_iv);
