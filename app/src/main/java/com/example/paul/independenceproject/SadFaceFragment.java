@@ -24,6 +24,7 @@ import info.hoang8f.widget.FButton;
 public class SadFaceFragment extends Fragment {
 
     FrameLayout sad_quote_page;
+    TTSManager ttsManager;
 
     public SadFaceFragment() {
         // Required empty public constructor
@@ -35,6 +36,10 @@ public class SadFaceFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_sad_face, container, false);
+
+        //        TEXTTOSPEECH
+        ttsManager = new TTSManager();
+        ttsManager.init(this.getActivity());
 
         sad_quote_page = (FrameLayout)v.findViewById(R.id.sad_quote_page);
 
@@ -57,6 +62,7 @@ public class SadFaceFragment extends Fragment {
                 Typeface capture_it = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Capture_it.ttf");
                 sad_quote_view.setTypeface(capture_it);
                 sad_quote_view.setText(randomString);
+                ttsManager.initQueue(randomString);
 
 
             }

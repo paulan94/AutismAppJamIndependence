@@ -25,6 +25,8 @@ public class HappyFaceFragment extends Fragment {
 
     FrameLayout happy_quote_page;
 
+    TTSManager ttsManager = null;
+
     public HappyFaceFragment() {
         // Required empty public constructor
     }
@@ -36,6 +38,10 @@ public class HappyFaceFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_happy_face, container, false);
+
+//        TEXTTOSPEECH
+        ttsManager = new TTSManager();
+        ttsManager.init(this.getActivity());
 
         happy_quote_page = (FrameLayout)v.findViewById(R.id.happy_quote_page);
 
@@ -58,6 +64,7 @@ public class HappyFaceFragment extends Fragment {
                 Typeface capture_it = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Capture_it.ttf");
                 happy_quote_view.setTypeface(capture_it);
                 happy_quote_view.setText(randomString);
+                ttsManager.initQueue(randomString);
 
 
             }

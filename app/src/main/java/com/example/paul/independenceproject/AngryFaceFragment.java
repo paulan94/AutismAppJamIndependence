@@ -25,6 +25,8 @@ public class AngryFaceFragment extends Fragment {
 
     FrameLayout angry_quote_page;
 
+    TTSManager ttsManager;
+
     public AngryFaceFragment() {
         // Required empty public constructor
     }
@@ -36,6 +38,10 @@ public class AngryFaceFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_angry_face, container, false);
+
+        //        TEXTTOSPEECH
+        ttsManager = new TTSManager();
+        ttsManager.init(this.getActivity());
 
         angry_quote_page = (FrameLayout)v.findViewById(R.id.angry_quote_page);
 
@@ -58,6 +64,7 @@ public class AngryFaceFragment extends Fragment {
                 Typeface capture_it = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Capture_it.ttf");
                 angry_quote_view.setTypeface(capture_it);
                 angry_quote_view.setText(randomString);
+                ttsManager.initQueue(randomString);
 
 
             }

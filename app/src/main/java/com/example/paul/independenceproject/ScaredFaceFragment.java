@@ -23,6 +23,7 @@ import info.hoang8f.widget.FButton;
 public class ScaredFaceFragment extends Fragment {
 
     FrameLayout scared_quote_page;
+    TTSManager ttsManager;
 
     public ScaredFaceFragment() {
         // Required empty public constructor
@@ -38,6 +39,10 @@ public class ScaredFaceFragment extends Fragment {
 
         scared_quote_page = (FrameLayout)v.findViewById(R.id.scared_quote_page);
 
+        //        TEXTTOSPEECH
+        ttsManager = new TTSManager();
+        ttsManager.init(this.getActivity());
+
         FButton generate_quote_button = (FButton)v.findViewById(R.id.generate_quote);
         final TextView scared_quote_view = (TextView)v.findViewById(R.id.scared_quote_textview);
 
@@ -50,13 +55,14 @@ public class ScaredFaceFragment extends Fragment {
             public void onClick(View v) {
 
                 //handle duplicates
-                String[] arrayOfStrings = v.getResources().getStringArray(R.array.happy_quote_list);
+                String[] arrayOfStrings = v.getResources().getStringArray(R.array.scared_quote_list);
                 String randomString = arrayOfStrings[new Random().nextInt(arrayOfStrings.length)];
                 scared_quote_view.setVisibility(TextView.VISIBLE);
 
                 Typeface capture_it = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Capture_it.ttf");
                 scared_quote_view.setTypeface(capture_it);
                 scared_quote_view.setText(randomString);
+                ttsManager.initQueue(randomString);
 
 
             }

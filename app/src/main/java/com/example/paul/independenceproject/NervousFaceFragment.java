@@ -24,6 +24,7 @@ import info.hoang8f.widget.FButton;
 public class NervousFaceFragment extends Fragment {
 
     FrameLayout nervous_quote_page;
+    TTSManager ttsManager;
 
     public NervousFaceFragment() {
         // Required empty public constructor
@@ -36,6 +37,10 @@ public class NervousFaceFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_nervous_face, container, false);
+
+        //        TEXTTOSPEECH
+        ttsManager = new TTSManager();
+        ttsManager.init(this.getActivity());
 
         nervous_quote_page = (FrameLayout)v.findViewById(R.id.nervous_quote_page);
 
@@ -51,14 +56,14 @@ public class NervousFaceFragment extends Fragment {
             public void onClick(View v) {
 
                 //handle duplicates
-                String[] arrayOfStrings = v.getResources().getStringArray(R.array.happy_quote_list);
+                String[] arrayOfStrings = v.getResources().getStringArray(R.array.nervous_quote_list);
                 String randomString = arrayOfStrings[new Random().nextInt(arrayOfStrings.length)];
                 nervous_quote_view.setVisibility(TextView.VISIBLE);
 
                 Typeface capture_it = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Capture_it.ttf");
                 nervous_quote_view.setTypeface(capture_it);
                 nervous_quote_view.setText(randomString);
-
+                ttsManager.initQueue(randomString);
 
             }
         });
