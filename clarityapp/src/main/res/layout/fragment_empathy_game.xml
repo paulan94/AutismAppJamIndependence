@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context=".EmpathyGameFragment"
+    android:background="@drawable/color_bg">
+
+
+
+    <RelativeLayout
+        android:id="@+id/game_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical">
+        <!--change visibility to gone-->
+
+        <TextView
+            android:id="@+id/question_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_question"
+            android:textColor="@color/Black"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <ImageView
+            android:id="@+id/happy_face_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/happy_face"
+            android:layout_below="@+id/question_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp" />
+        <TextView
+            android:id="@+id/happy_face_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/happy_face_text"
+            android:textColor="@color/Black"
+            android:layout_above="@+id/scared_face_iv"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/sad_face_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sad_face"
+            android:layout_above="@+id/nervous_face_tv"
+            android:layout_alignLeft="@+id/angry_face_iv"
+            android:layout_alignStart="@+id/angry_face_iv" />
+
+        <TextView
+            android:id="@+id/sad_face_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sad_face_text"
+            android:textColor="@color/Black"
+            android:layout_below="@+id/sad_face_iv"
+            android:layout_alignRight="@+id/angry_face_tv"
+            android:layout_alignEnd="@+id/angry_face_tv" />
+
+        <ImageView
+            android:id="@+id/nervous_face_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nervous_face1"
+            android:layout_below="@+id/scared_face_tv"
+            android:layout_toLeftOf="@+id/happy_face_tv"
+            android:layout_toStartOf="@+id/happy_face_tv" />
+        <TextView
+            android:id="@+id/nervous_face_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nervous_face_text"
+            android:textColor="@color/Black"
+            android:layout_below="@+id/nervous_face_iv"
+            android:layout_alignRight="@+id/scared_face_tv"
+            android:layout_alignEnd="@+id/scared_face_tv" />
+
+        <ImageView
+            android:id="@+id/angry_face_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/angry_face1"
+            android:layout_alignTop="@+id/scared_face_iv"
+            android:layout_toRightOf="@+id/happy_face_tv"
+            android:layout_toEndOf="@+id/happy_face_tv" />
+
+        <TextView
+            android:id="@+id/angry_face_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/angry_face_text"
+            android:textColor="@color/Black"
+            android:layout_below="@+id/angry_face_iv"
+            android:layout_toRightOf="@+id/happy_face_iv"
+            android:layout_toEndOf="@+id/happy_face_iv" />
+
+        <ImageView
+            android:id="@+id/scared_face_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scared_face"
+            android:layout_below="@+id/happy_face_iv"
+            android:layout_alignLeft="@+id/nervous_face_iv"
+            android:layout_alignStart="@+id/nervous_face_iv" />
+
+        <TextView
+            android:id="@+id/scared_face_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scared_face_text"
+            android:textColor="@color/Black"
+            android:layout_below="@+id/scared_face_iv"
+            android:layout_toLeftOf="@+id/happy_face_iv"
+            android:layout_toStartOf="@+id/happy_face_iv" />
+        
+    </RelativeLayout>
+
+</FrameLayout>

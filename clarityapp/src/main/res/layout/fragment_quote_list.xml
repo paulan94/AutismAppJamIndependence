@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context=".QuoteListFragment"
+    android:background="@drawable/color_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/quote_library_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:text="@string/quote_lib_title"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/happy_quote_list"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="@string/happy_quotes"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/FireBrick"
+            fbutton:shadowColor="@color/white"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_marginTop="109dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/scared_quote_list"
+            android:layout_alignStart="@+id/scared_quote_list" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/scared_quote_list"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="@string/scared_quotes"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/FireBrick"
+            fbutton:shadowColor="@color/white"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_below="@+id/happy_quote_list"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/angry_quote_list"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="@string/angry_quotes"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/FireBrick"
+            fbutton:shadowColor="@color/white"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_below="@+id/scared_quote_list"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/nervous_quote_list"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="@string/nervous_quotes"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/FireBrick"
+            fbutton:shadowColor="@color/white"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/angry_quote_list"
+            android:layout_marginTop="30dp"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/sad_quote_list"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="@string/sad_quotes"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/FireBrick"
+            fbutton:shadowColor="@color/white"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/nervous_quote_list"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>

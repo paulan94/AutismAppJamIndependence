@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/front_page_bg">
+
+       <TextView
+           android:id="@+id/app_title_textview"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/title_text"
+           android:textStyle="bold"
+           android:textSize="50sp"
+           android:gravity="center"
+           android:layout_centerHorizontal="true"
+           android:textColor="@color/Gold"
+           android:layout_margin="20dp"/>
+
+       <ImageView
+           android:id="@+id/logo_imageview"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/welcome_page_icon"
+           android:layout_below="@+id/app_title_textview"
+           android:layout_centerHorizontal="true"/>
+
+
+       <info.hoang8f.widget.FButton
+           android:id="@+id/start_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/rounded_button"
+           android:text="@string/get_started_button_text"
+           android:textSize="20sp"
+           android:textColor="@color/Black"
+           fbutton:buttonColor="@color/Gold"
+           fbutton:shadowColor="@color/white"
+           fbutton:shadowEnabled="true"
+           fbutton:shadowHeight="5dp"
+           fbutton:cornerRadius="5dp"
+           android:gravity="center"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:paddingLeft="15dp"
+           android:paddingRight="15dp"
+           android:layout_marginBottom="70dp"/>
+
+
+   </RelativeLayout>
+
+</FrameLayout>
